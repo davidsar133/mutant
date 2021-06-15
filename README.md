@@ -29,7 +29,7 @@
 - Dirigirse a la carpeta raiz del proyecto
 - Ejecutar el comand mvn clean springboot:run
 
-###Ejecución
+### Ejecución
 Desde postman, crear un nuevo request de tipo POST con la url http://localhost:8080/mutant
 
 
@@ -47,7 +47,7 @@ POST localhost:8080/mutant
 Response: 200 - OK
 ```
 
-###Stats endpoint
+### Stats endpoint
 
 
 ```
