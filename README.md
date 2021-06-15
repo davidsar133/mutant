@@ -10,6 +10,7 @@
 - Spring Boot 2.5.1
 - Jacoco  
 - Junit 5
+- AWS Elastic Beanstalk
 
 
 ### Instrucciones para instalación local
@@ -32,13 +33,17 @@
 ### Ejecución
 Desde postman, crear un nuevo request de tipo POST con la url http://localhost:8080/mutant
 
+Igualmente se puede usar la url http://mutants.us-east-2.elasticbeanstalk.com/mutant
+para la version desplegada
 
 Ejemplo de consumo
 -----
 #### mutant endpoint
 A continuación se muestran ejemplos concretos de request y response con la API desde postman. La url es```localhost:8080/mutant```
+y para la version deplegada es ```mutants.us-east-2.elasticbeanstalk.com```
 ```
 POST localhost:8080/mutant
+POST mutants.us-east-2.elasticbeanstalk.com/mutant
 {
     "dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 }
@@ -52,6 +57,7 @@ Response: 200 - OK
 
 ```
 GET localhost:8080/stats
+GET mutants.us-east-2.elasticbeanstalk.com/stats
 ```
 ```
 Response 200 - OK 
